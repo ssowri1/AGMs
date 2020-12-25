@@ -48,6 +48,27 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // to restore the scene back to its current state.
     }
 
+    //MARK:- For logic manipulation
+    func warmUps() {
+         let products = [1, 2, 3, 4, 5, 6]
+
+         for i in 0 ..< min(2, products.count) {
+             print(i)
+         }
+         print("****** \n")
+
+         for (index, product) in zip(products.indices, products).prefix(4) {
+             print(index, product)
+         }
+
+         print("****** \n")
+         for j in 0 ..< products.count {
+             print(j)
+         }
+
+    }
+
 
 }
+
 
